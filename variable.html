@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+   
+</head>
+<body>
+    <h3>JavaScript Variable and Type Examples</h3>
+
+    <!-- Ex 1: Variable Declaration with let, var, const -->
+    <div>
+        <h4>1. Variable Declaration with let, var, and const</h4>
+        <p id="example1"></p>
+        <script>
+            let age = 25;
+            var name = "Alice";
+            const pi = 3.14;
+
+            document.getElementById("example1").innerHTML = `
+                Age: ${age}<br>
+                Name: ${name}<br>
+                Pi: ${pi}
+            `;
+        </script>
+    </div>
+
+    <!-- Ex 2: Different Variable Types -->
+    <div>
+        <h4>2. Different Variable Types</h4>
+        <p id="example2"></p>
+        <script>
+            let num = 100;
+            let message = "Hello";
+            let isActive = true;
+            let items = [1, 2, 3];
+            let person = {name: "Indhu", age:22};
+    
+            // Accessing values
+            let firstItem = items[0]; 
+            let secondItem = items[1]; 
+            let personName = person.name; 
+            let personAge = person.age;  
+           
+            document.getElementById("example2").innerHTML = `
+                Value of num: ${num}<br>
+                Value of message: ${message}<br>
+                Value of isActive: ${isActive}<br>
+                Value of first item in array: ${firstItem}<br>
+                Value of second item in array: ${secondItem}<br>
+                Value of person's name: ${personName}<br>
+                Value of person's age: ${personAge}
+            `;
+        </script>
+    </div>
+    
+
+    <!-- Example 3: Dynamic Typing in JavaScript -->
+    <div>
+        <h4>3. Dynamic Typing</h4>
+        <p id="example3"></p>
+        <script>
+            let dynamicVar = "20";
+            let result = `Type of dynamicVar: ${typeof dynamicVar}`;
+            dynamicVar = 42;
+            result += `<br>Type of dynamicVar after change: ${typeof dynamicVar}`;
+            
+            document.getElementById("example3").innerHTML = result;
+        </script>
+    </div>
+
+    <!-- Example 4: Reassigning Variables -->
+    <div>
+        <h4>4. Reassigning Variables with let and var</h4>
+        <p id="example4"></p>
+        <script>
+            let counter = 10;
+            counter = 20;  // Reassigning
+
+            document.getElementById("example4").innerHTML = `Updated counter: ${counter}`;
+        </script>
+    </div>
+
+    <!-- Example 5: Using const (Attempting to Reassign a const Variable) -->
+    <div>
+        <h4>5. Using const</h4>
+        <p id="example5"></p>
+        <script>
+            const count = 10;
+            let res = `No of element present: ${count}`;
+            
+            // count = 12;  
+            // // Error: Assignment to constant variable.
+
+            document.getElementById("example5").innerHTML = res;
+        </script>
+    </div>
+
+</body>
+</html>

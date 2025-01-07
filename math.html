@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+    <h4>Math Operations and Operators</h4>
+    <div id="result"></div>
+
+    <script>
+        let num1 = 8;
+        let num2 = 3;
+
+       
+        let add = num1 + num2;
+        let subtract = num1 - num2;
+        let multiply = num1 * num2;
+        let divide = num1 / num2;
+        let modulus = num1 % num2; // Remainder of division
+        let incrementPost = num1++;
+        let decrementPost = num2--;
+        let incrementPre = ++num1;
+        let decrementPre = --num2;
+        let assign = num1 = 10;
+        let equal = (num1 == num2);
+        let notEqual = (num1 != num2);
+        let greaterThan = (num1 > num2);
+        let lessThan = (num1 < num2);
+        let logicalAnd = (num1 > 5 && num2 < 5);
+        let logicalOr = (num1 < 5 || num2 > 5);
+
+        // Math object functions
+        let power = Math.pow(num1, num2); // n1^n2
+        let squareRoot = Math.sqrt(num1); // Sqrt of num1
+        let randomNum = Math.random(); // Random number between 0 and 1
+        let rounded = Math.round(4.7); // Round to nearest integer
+        let ceil = Math.ceil(4.1); // Round up 
+        let floor = Math.floor(4.9); // Round down
+        let absolute = Math.abs(-5); // Absolute value
+        let max = Math.max(1, 2, 3, 4); // Max num
+        let min = Math.min(1, 2, 3, 4); // Min num
+
+        
+
+        document.getElementById("result").innerHTML = `
+            Add: ${add}<br>
+            Subtract: ${subtract}<br>
+            Multiply: ${multiply}<br>
+            Divide: ${divide}<br>
+            Modulus: ${modulus}<br>
+            Post Increment: ${incrementPost}<br>
+            Post Decrement: ${decrementPost}<br>
+            Pre Increment: ${incrementPre}<br>
+            Pre Decrement: ${decrementPre}<br>
+            Assignment: ${assign}<br>
+            Equal (==): ${equal}<br>
+            Not Equal (!=): ${notEqual}<br>
+            Greater Than: ${greaterThan}<br>
+            Less Than: ${lessThan}<br>
+            Logical AND: ${logicalAnd}<br>
+            Logical OR: ${logicalOr}<br>
+            Power (${num1}^${num2}): ${power}<br>
+            Square root of num1: ${squareRoot}<br>
+            Random number: ${randomNum}<br>
+            Rounded value of 4.7: ${rounded}<br>
+            Ceil value of 4.1: ${ceil}<br>
+            Floor value of 4.9: ${floor}<br>
+            Absolute value of -5: ${absolute}<br>
+            Max value: ${max}<br>
+            Min value: ${min}<br>
+        `;
+
+        
+    </script>
+</body>
+</html>

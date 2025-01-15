@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+
+    <h3>Function - EX:Simple Calculator</h3>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    
+
+    <h5 id="output1"></h5>
+    <h5 id="output2"></h5>
+    <h4>Result: <span id="result">0</span></h4>
+
+    <script>
+        // 1.func-add two numbers
+        function add() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            const result = num1 + num2;
+            displayResult(result);
+        }
+
+        // 2.func-subtract two numbers
+        function subtract() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const result = num1 - num2;
+            displayResult(result);
+        }
+
+        // 3.func-multi two numbers
+        function multiply() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const result = num1 * num2;
+            displayResult(result);
+        }
+
+        // 4.func-divide two numbers
+        function divide() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            
+            if (num2 === 0) {
+                alert("Cannot divide by zero!");
+                return;
+            }
+            const result = num1 / num2;
+            displayResult(result);
+        }
+
+    
+        function displayResult(result) {
+            document.getElementById('result').textContent = result;
+        }
+
+        // 6. Anonymous function
+        document.getElementById('num1').addEventListener('input', function () {
+            let num1Value = document.getElementById('num1').value;
+            document.getElementById('output1').textContent = `First number: ${num1Value}`;
+        });
+
+        // 7. Arrow function 
+        document.getElementById('num2').addEventListener('input', () => {
+           
+            let num2Value = document.getElementById('num2').value;
+            document.getElementById('output2').textContent = `Second number: ${num2Value}`;
+        });
+    </script>
+</body>
+
+</html>

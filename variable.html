@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
-   
+
 </head>
+
 <body>
     <h3>JavaScript Variable and Type Examples</h3>
 
@@ -25,7 +27,6 @@
             `;
         </script>
     </div>
-
     <!-- Ex 2: Different Variable Types -->
     <div>
         <h4>2. Different Variable Types</h4>
@@ -35,14 +36,14 @@
             let message = "Hello";
             let isActive = true;
             let items = [1, 2, 3];
-            let person = {name: "Indhu", age:22};
-    
+            let person = { name: "Indhu", age: 22 };
+
             // Accessing values
-            let firstItem = items[0]; 
-            let secondItem = items[1]; 
-            let personName = person.name; 
-            let personAge = person.age;  
-           
+            let firstItem = items[0];
+            let secondItem = items[1];
+            let personName = person.name;
+            let personAge = person.age;
+
             document.getElementById("example2").innerHTML = `
                 Value of num: ${num}<br>
                 Value of message: ${message}<br>
@@ -54,7 +55,7 @@
             `;
         </script>
     </div>
-    
+
 
     <!-- Example 3: Dynamic Typing in JavaScript -->
     <div>
@@ -65,7 +66,7 @@
             let result = `Type of dynamicVar: ${typeof dynamicVar}`;
             dynamicVar = 42;
             result += `<br>Type of dynamicVar after change: ${typeof dynamicVar}`;
-            
+
             document.getElementById("example3").innerHTML = result;
         </script>
     </div>
@@ -89,7 +90,7 @@
         <script>
             const count = 10;
             let res = `No of element present: ${count}`;
-            
+
             // count = 12;  
             // // Error: Assignment to constant variable.
 
@@ -98,4 +99,5 @@
     </div>
 
 </body>
+
 </html>

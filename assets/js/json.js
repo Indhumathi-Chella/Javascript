@@ -1,13 +1,14 @@
-// JSON.parse() converts JSON string into javascript object
+// JSON.parse() convert JSON string into js object
 function parseJSON() {
-    const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
-    const obj = JSON.parse(jsonString); // Parse string into object
+    let jsonString = '{"name": "mathi", "age": 22, "city": "Tenkasi"}';
+    let obj = JSON.parse(jsonString); 
     document.getElementById('parsed').textContent = JSON.stringify(obj, null, 2); 
+    console.log("Parsed Object:", obj);
 }
 
-// JSON.stringify() converts javascript object into JSON string
+// JSON.stringify() convert JS object into JSON string
 function stringifyJSON() {
-    const obj = { name: "Alice", age: 25, city: "London" };
-    const jsonString = JSON.stringify(obj); // Convert object to JSON string
+    let obj = { name: "Indhu", age: 23, city: "chennai" };
+    let jsonString = JSON.stringify(obj); 
     document.getElementById('stringified').textContent = jsonString; 
 }

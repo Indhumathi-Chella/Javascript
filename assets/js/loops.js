@@ -13,16 +13,16 @@ console.log("\nWhile Loop Example: Countdown from 5");
 let countdown = 5;
 while (countdown >= 0) {
     console.log(`Countdown: ${countdown}`);
-    countdown--; 
+    countdown--;
 }
 
 // 3. Do...While Loop
 let count = 0;
 
 do {
-    console.log(count);  
-    count++;  
-} while (count < 5);  
+    console.log(count);
+    count++;
+} while (count < 5);
 
 // 4. For...of Loop : display list of fruits
 console.log("\nFor...of Loop Example: Display a list of fruits");
@@ -31,7 +31,6 @@ const fruits = ["Apple", "Banana", "Mango"];
 for (const fruit of fruits) {
     console.log(`Fruit: ${fruit}`);
 }
-
 // 5. For...in Loop: display properties of object(User profile)
 console.log("\nFor...in Loop Example: Display User Profile");
 

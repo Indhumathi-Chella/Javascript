@@ -5,121 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Important Array Methods with Numbers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        .output {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border: 1px solid #ccc;
-        }
-
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-    </style>
+    <script src="./assets/js/array.js"></script>
 </head>
 
 <body>
 
     <h2>Array Methods </h2>
-
-    <button onclick="runArrayMethods()">Run Array Methods</button>
-
-    <div class="output">
-        <h3>Results:</h3>
-        <pre id="result"></pre>
-    </div>
-
-    <script>
-        function runArrayMethods() {
-            let output = '';
-
-            // input array
-            let numbers = [10, 20, 30];
-            output += "Initial Array: " + numbers.join(", ") + "\n\n";
-
-            //  push() - Adds one or more elements to the end of the array
-            numbers.push(40);
-            output += "After push(): " + numbers.join(", ") + "\n";
-
-            //  pop() - Removes the last element from the array
-            let removedPop = numbers.pop();
-            output += "After pop(): " + numbers.join(", ") + "\n";
-            output += "Removed item (pop): " + removedPop + "\n";
-
-            //  foreach() - loops through each items in a array
-            output += "After for Each:" + "\n";
-            numbers.forEach(function (num) {
-                output += num + "\n";
-            })
-
-            // shift() - Removes the first element from the array
-            let removedShift = numbers.shift();
-            output += "After shift(): " + numbers.join(", ") + "\n";
-            output += "Removed item (shift): " + removedShift + "\n";
-
-            //  unshift() - Adds one or more elements to the beginning of the array
-            numbers.unshift(5);
-            output += "After unshift(): " + numbers.join(", ") + "\n";
-
-            //  map() - Create a new array with the results of calling a function on each element
-            let doubled = numbers.map(number => number * 2);
-            output += "After map() (doubled values): " + doubled.join(", ") + "\n";
-
-            //  filter() - Create a new array with elements that pass a test
-            let numbersGreaterThan15 = numbers.filter(number => number > 15);
-            output += "After filter() (numbers greater than 15): " + numbersGreaterThan15.join(", ") + "\n";
-
-            //  reduce() - Apply a function to accumulate a value from the array
-            let sum = numbers.reduce((acc, number) => acc + number, 0);
-            output += "After reduce() (sum of numbers): " + sum + "\n";
-
-            // join() - Combine all array elements into a string
-            let numbersString = numbers.join(", ");
-            output += "After join(): " + numbersString + "\n";
-
-            // sort() - Sort the array elements numerically
-            numbers.sort((a, b) => a - b);
-            output += "After sort(): " + numbers.join(", ") + "\n";
-
-            // reverse() - Reverse the order of the array elements
-            numbers.reverse();
-            output += "After reverse(): " + numbers.join(", ") + "\n";
-
-            //  concat() - Merge two arrays
-            let moreNumbers = [50, 60];
-            let allNumbers = numbers.concat(moreNumbers);
-            output += "After concat(): " + allNumbers.join(", ") + "\n";
-
-            //  includes() - Check if an element exists in the array
-            let hasTwenty = numbers.includes(20);
-            output += "After includes() (Has 20?): " + hasTwenty + "\n";
-
-            //  indexOf() - Find the index of an element
-            let indexOfTen = numbers.indexOf(10);
-            output += "After indexOf() (index of 10): " + indexOfTen + "\n";
-
-            //  some() - Check if at least one element meets the condition
-            let hasNegative = numbers.some(number => number < 0);
-            output += "After some() (Has negative number?): " + hasNegative + "\n";
-
-            //  every() - Check if all elements meet the condition
-            let allPositive = numbers.every(number => number > 0);
-            output += "After every() (Are all numbers positive?): " + allPositive + "\n";
-
-            document.getElementById("result").textContent = output;
-        }
-    </script>
 
 </body>
 

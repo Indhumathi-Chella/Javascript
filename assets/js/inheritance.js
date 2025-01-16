@@ -8,7 +8,6 @@ class Shape {
         console.log(`This is a shape called ${this.name}.`);
     }
 }
-
 // Child Class 
 class Circle extends Shape {
     constructor(radius) {
@@ -25,7 +24,6 @@ class Circle extends Shape {
         console.log(`This is a ${this.name} with a radius of ${this.radius} and area of ${this.area().toFixed(2)}`);
     }
 }
-
 
 let myCircle = new Circle(5);
 let myCircle2 = new Circle(3);

@@ -17,8 +17,6 @@
     <button onclick="multiply()">Multiply</button>
     <button onclick="divide()">Divide</button>
 
-    
-
     <h5 id="output1"></h5>
     <h5 id="output2"></h5>
     <h4>Result: <span id="result">0</span></h4>
@@ -53,7 +51,7 @@
             const num1 = parseFloat(document.getElementById('num1').value);
             const num2 = parseFloat(document.getElementById('num2').value);
 
-            
+
             if (num2 === 0) {
                 alert("Cannot divide by zero!");
                 return;
@@ -62,7 +60,7 @@
             displayResult(result);
         }
 
-    
+
         function displayResult(result) {
             document.getElementById('result').textContent = result;
         }
@@ -75,7 +73,7 @@
 
         // 7. Arrow function 
         document.getElementById('num2').addEventListener('input', () => {
-           
+
             let num2Value = document.getElementById('num2').value;
             document.getElementById('output2').textContent = `Second number: ${num2Value}`;
         });

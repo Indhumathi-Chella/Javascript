@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Strings</title>
 </head>
-<body>
 
+<body>
     <h4>JavaScript Strings</h4>
-    
+
     <div id="output"></div>
 
     <script>
@@ -31,33 +32,33 @@
         let userInfo = `Hello, my name is ${firstName} ${lastName}, and I am ${age} years old.`;
 
         // 5. length of a string
-        let stringLength = greeting.length;  
+        let stringLength = greeting.length;
 
         // 6. Retrieving a specific string character
         let firstChar = greeting.charAt(0); //first character
         let lastChar = greeting.charAt(greeting.length - 1); // last character
 
         // 7.string contains a substring
-        let includesHello = greeting.includes("Hello"); 
+        let includesHello = greeting.includes("Hello");
 
         // 8. position of a substring in a string
-        let indexOfWorld = greeting.indexOf("World"); 
+        let indexOfWorld = greeting.indexOf("World");
 
         // 9. Extracting a substring 
-        let sliceExample = greeting.slice(0, 5); 
+        let sliceExample = greeting.slice(0, 5);
         let substringExample = greeting.substring(0, 8);
 
         // 10. Changing case
-        let lowerCase = greeting.toLowerCase(); 
-        let upperCase = greeting.toUpperCase(); 
+        let lowerCase = greeting.toLowerCase();
+        let upperCase = greeting.toUpperCase();
 
         // 11. Update string
-        let replaceWorld = greeting.replace("World", "JavaScript"); 
-        
+        let replaceWorld = greeting.replace("World", "JavaScript");
+
         // 12.repeat string
-        let repeatHello = "Hi! ".repeat(3); 
-        
-    
+        let repeatHello = "Hi! ".repeat(3);
+
+
         document.getElementById("output").innerHTML = `
             1. Declaring Strings:<br>
             greeting = ${greeting}<br>
@@ -103,4 +104,5 @@
     </script>
 
 </body>
+
 </html>

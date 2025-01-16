@@ -99,14 +99,14 @@
             let num = document.getElementById('doWhileLoopInput').value;
             let output = '';
             do {
-                if (num <= 0) {
+                if (num < 0) {
                     output += 'Please enter a positive number.<br>';
                     break;
                 } else {
                     output += `Valid number: ${num}<br>`;
                     break;
                 }
-            } while (num <= 0);
+            } while (num < 0);
             document.getElementById('doWhileLoopOutput').innerHTML = output;
         }
 
@@ -130,7 +130,7 @@
             };
             let output = '';
             for (const key in userProfile) {
-                output += `${key}: ${userProfile[key]}<br>`;
+                output += ` ${userProfile[key]}<br>`;
             }
             document.getElementById('forInLoopOutput').innerHTML = output;
         }
@@ -145,8 +145,8 @@
                     break; // Stop when i reaches 5
                 }
                 if (i === 3) {
-                    output += `Skipping iteration ${i}<br>`;
-                    continue; // Skip when i is 3
+                    // output += `Skipping iteration ${i}<br>`;
+                    continue; // pass when i is 3
                 }
                 output += `Iteration ${i}<br>`;
             }

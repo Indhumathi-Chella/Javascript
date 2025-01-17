@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Event </h2>
+
+<button id="toggleTextButton">Add</button>
+<button id="removeListenerButton">Remove</button>
+<button onclick="alert('Inline event handler clicked!')">Inline Event Handler</button>
+
+<p id="text" style="display: none;">Welcome, Indhu!</p>
+
+<script>
+  // Select the button elements
+  const toggleTextButton = document.getElementById('toggleTextButton');
+  const removeListenerButton = document.getElementById('removeListenerButton');
+  const text = document.getElementById('text');
+
+  // Function to toggle text visibility
+  function toggleTextVisibility() {
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+  // Add event listener 
+  toggleTextButton.addEventListener('click', toggleTextVisibility);
+
+  // Remove event listener
+  removeListenerButton.addEventListener('click', function() {
+    toggleTextButton.removeEventListener('click', toggleTextVisibility);
+    text.textContent=" ";
+
+  });
+</script>
+
+</body>
+</html>

@@ -71,10 +71,12 @@ person7.introduce();
 
 // Using Object.assign() to merge objects
 let person8 = { name: "arun", age: 24 };
+Object.freeze(person8);
 let person9 = { gender: "Male", occupation: "Engineer" };
 
 let mergedPerson = Object.assign({}, person8, person9);
-
+person8.age ="25";
+console.log(person8.age);
 console.log(mergedPerson);
 
 

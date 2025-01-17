@@ -1,7 +1,7 @@
 let numbers = [1, 2, 6, 4, 5, 3];
 console.log("Initial Array:", numbers);
 
-// push() - Adds element to end
+// push() - Adds element at end
 numbers.push(6);
 console.log("\nAfter push(6):", numbers);
 
